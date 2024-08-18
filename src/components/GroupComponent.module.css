@@ -1,0 +1,39 @@
+.arrowDropDown24dpFill0WghIcon {
+  position: absolute;
+  top: 10px;
+  left: 322px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 60px;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+
+.generationY {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.arrowDropDown24dpFill0WghParent {
+  position: absolute;
+  top: 375px;
+  left: 32px;
+  width: 370px;
+  height: 60px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

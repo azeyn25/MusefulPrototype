@@ -1,0 +1,68 @@
+.entdecken1 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--dark-ink);
+  font-family: var(--font-cormorant-garamond);
+}
+
+.scrollableContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 740px; /* Adjust height to fit within the container */
+  margin-top: 120px; /* Optional: Add padding if necessary */
+}
+
+.klimaXAusstellungIcon,
+.newRealitiesAusstellung,
+.dauerausstellungIcon {
+  width: 350px;
+  height: 220px;
+  object-fit: contain;
+  flex: 0 0 auto; /* Prevents images from shrinking */
+  margin-right: 16px; /* Optional: space between images */
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.headerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 430px;
+  height: 120px;
+}
+
+.entdecken {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+  display: inline-block;
+  width: 262px;
+  height: 46px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 430px;
+  height: 120px;
+}
+
+.searchFill0Wght400Grad0OpsIcon {
+  position: absolute;
+  top: 64px;
+  left: 373px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  opacity: 0.6;
+}

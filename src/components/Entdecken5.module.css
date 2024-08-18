@@ -1,0 +1,89 @@
+.textChild {
+  border-radius: var(--br-lg);
+  background-color: var(--color-gainsboro-100);
+}
+.text,
+.textChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 364px;
+  height: 100px;
+}
+.thisInformationHas,
+.toYourBookmarks {
+  margin: 0;
+}
+.thisInformationHasContainer {
+  position: absolute;
+  top: 20px;
+  left: 26px;
+  line-height: 150%;
+}
+.mationHasBeen {
+  margin: 0;
+}
+.mationHasBeenContainer {
+  position: absolute;
+  top: 20px;
+  left: 32px;
+  line-height: 150%;
+  display: none;
+}
+.textParent {
+  position: absolute;
+  top: 366px;
+  left: 30px;
+  width: 364px;
+  height: 100px;
+  font-size: var(--font-size-xl);
+}
+.dontShowAgain {
+  position: relative;
+  font-weight: 500;
+}
+.loginButton {
+  position: absolute;
+  top: 862px;
+  left: 30px;
+  border-radius: var(--br-10xl);
+  border: 1px solid var(--dark-ink);
+  box-sizing: border-box;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+}
+.ok {
+  position: relative;
+  font-weight: 500;
+}
+.loginButton1 {
+  position: absolute;
+  top: 862px;
+  left: 318px;
+  border-radius: var(--br-10xl);
+  background-color: var(--color-gray-200);
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  box-sizing: border-box;
+}
+.entdecken6 {
+  width: 430px;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

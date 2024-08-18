@@ -1,0 +1,126 @@
+.searchFill0Wght400Grad0OpsIcon {
+  position: absolute;
+  top: 60px;
+  left: 358px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  opacity: 0.6;
+}
+.navigationIcon {
+  position: absolute;
+  top: 863px;
+  left: 0;
+  width: 430px;
+  height: 67px;
+}
+.dauerausstellungMuseum {
+  position: absolute;
+  top: 138px;
+  left: 40px;
+  font-size: var(--font-size-lgi);
+  line-height: 150%;
+  display: inline-block;
+  width: 347px;
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  width: 370px;
+  height: 60px;
+  opacity: 0.2;
+}
+.pacMan {
+  position: absolute;
+  top: 14px;
+  left: 22px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupItem,
+.rectangleParent {
+  position: absolute;
+  width: 370px;
+  height: 60px;
+}
+.rectangleParent {
+  top: 224px;
+  left: 30px;
+  cursor: pointer;
+}
+.groupItem {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.atari {
+  position: absolute;
+  top: 15px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupInner,
+.rectangleGroup {
+  position: absolute;
+  top: 294px;
+  left: 30px;
+  width: 370px;
+  height: 60px;
+}
+.groupInner {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.pokmon {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.rectangleContainer {
+  position: absolute;
+  top: 368px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.lesezeichenChild {
+  position: absolute;
+  top: 459.5px;
+  left: 38.5px;
+  border-top: 1px solid var(--dark-ink);
+  box-sizing: border-box;
+  width: 349px;
+  height: 1px;
+}
+.lesezeichen1 {
+  position: absolute;
+  top: 46px;
+  left: 38px;
+  font-size: var(--font-size-29xl);
+  display: inline-block;
+  font-family: var(--font-cormorant-garamond);
+  width: 262px;
+  height: 46px;
+}
+.lesezeichen {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

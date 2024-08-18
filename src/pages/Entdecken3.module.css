@@ -1,0 +1,91 @@
+.img56161Icon {
+  position: absolute;
+  top: 109px;
+  left: -20px;
+  width: 463px;
+  height: 823px;
+  object-fit: cover;
+}
+.dauerausstellung,
+.header {
+  position: absolute;
+  top: 46px;
+  left: 31px;
+}
+.webcamContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreenWebcam {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  top: 0;
+  left: -2px;
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 432px;
+  height: 120px;
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-cormorant-garamond);
+}
+.info {
+  position: relative;
+  font-weight: 500;
+}
+.closeButtonIcon,
+.loginButton {
+  position: absolute;
+  top: 860px;
+  height: 40px;
+  cursor: pointer;
+}
+.loginButton {
+  left: 38px;
+  border-radius: 28px;
+  background: linear-gradient(192.55deg, #fd1eda, #6834aa);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  box-sizing: border-box;
+}
+.closeButtonIcon {
+  left: 350px;
+  width: 40px;
+}
+.chat {
+  position: relative;
+  font-weight: 500;
+}
+.loginButton1 {
+  position: absolute;
+  top: 860px;
+  left: 143px;
+  border-radius: var(--br-10xl);
+  background: linear-gradient(192.55deg, #fd1eda, #6834aa);
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.entdecken4 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-dimgray-100);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

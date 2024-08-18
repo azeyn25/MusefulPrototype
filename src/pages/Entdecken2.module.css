@@ -1,0 +1,62 @@
+.img56161Icon {
+  position: absolute;
+  top: 118px;
+  left: -11px;
+  width: 467px;
+  height: 812px;
+  object-fit: cover;
+}
+.webcamContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreenWebcam {
+  width: 100%;
+  height: 100%;
+}
+
+.dauerausstellung,
+.header {
+  position: absolute;
+  top: 46px;
+  left: 25px;
+}
+.header {
+  top: 0;
+  left: 0;
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 432px;
+  height: 120px;
+}
+.closeButtonIcon {
+  position: absolute;
+  top: 860px;
+  left: 358px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.frameButtonIcon {
+  position: absolute;
+  top: 860px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.entdecken3 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-dimgray-100);
+  height: 932px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--dark-ink);
+  font-family: var(--font-cormorant-garamond);
+}

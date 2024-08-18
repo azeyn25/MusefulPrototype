@@ -1,0 +1,279 @@
+.groupChild,
+.onboarding4Child {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 430px;
+  height: 756px;
+}
+.groupChild {
+  top: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  width: 370px;
+  height: 60px;
+  opacity: 0.2;
+}
+.deutsch {
+  position: absolute;
+  top: 14px;
+  left: 22px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupItem,
+.rectangleParent {
+  position: absolute;
+  width: 370px;
+  height: 60px;
+}
+.rectangleParent {
+  top: 224px;
+  left: 30px;
+  cursor: pointer;
+}
+.groupItem {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.englisch {
+  position: absolute;
+  top: 15px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupInner,
+.rectangleGroup {
+  position: absolute;
+  top: 294px;
+  left: 30px;
+  width: 370px;
+  height: 60px;
+}
+.groupInner {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.spanisch {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.rectangleContainer,
+.rectangleDiv {
+  position: absolute;
+  top: 364px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.rectangleDiv {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.franzsisch {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupChild1,
+.groupDiv {
+  position: absolute;
+  top: 434px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.groupChild1 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.mandarin {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupChild2,
+.rectangleParent1 {
+  position: absolute;
+  top: 504px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.groupChild2 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.japanisch {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupChild3,
+.rectangleParent2 {
+  position: absolute;
+  top: 574px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.groupChild3 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.arabisch {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupChild4,
+.rectangleParent3 {
+  position: absolute;
+  top: 644px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.groupChild4 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.hindi {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupChild5,
+.rectangleParent4 {
+  position: absolute;
+  top: 714px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.groupChild5 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  opacity: 0.2;
+}
+.tamil {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.rectangleParent5 {
+  position: absolute;
+  top: 784px;
+  left: 28px;
+  width: 370px;
+  height: 60px;
+}
+.welcheSpracheSprichst,
+.willkommen {
+  position: absolute;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+}
+.willkommen {
+  top: 84px;
+  left: 45px;
+  font-size: var(--font-size-13xl);
+  width: 350px;
+  height: 46px;
+}
+.welcheSpracheSprichst {
+  top: 150px;
+  left: 55px;
+  width: 324px;
+  height: 40px;
+}
+.statusChild {
+  position: absolute;
+  left: 0;
+  height: 8px;
+}
+.statusChild,
+.statusInner,
+.statusItem {
+  top: 0;
+  background-color: var(--dark-ink);
+  width: 100px;
+}
+.statusItem {
+  position: absolute;
+  left: 110px;
+  height: 8px;
+}
+.statusInner {
+  left: 220px;
+  opacity: 0.3;
+}
+.status,
+.statusChild1,
+.statusInner {
+  position: absolute;
+  height: 8px;
+}
+.statusChild1 {
+  top: 0;
+  left: 330px;
+  background-color: var(--dark-ink);
+  width: 100px;
+  opacity: 0.3;
+}
+.status {
+  top: 50px;
+  left: 0;
+  width: 430px;
+}
+.onboarding4 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

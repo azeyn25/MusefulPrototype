@@ -1,0 +1,44 @@
+.onboarding1Child {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 430px;
+  height: 756px;
+}
+.deinePersonalisierteMuseumse,
+.erlebeUndInteragiere {
+  position: absolute;
+  top: 418px;
+  left: 45px;
+  font-weight: 500;
+  display: inline-block;
+  width: 350px;
+  height: 46px;
+}
+.erlebeUndInteragiere {
+  top: 530px;
+  left: 40px;
+  font-size: var(--font-size-xl);
+  height: 110px;
+}
+.museful {
+  position: absolute;
+  top: 252px;
+  left: 80px;
+  font-size: var(--font-size-45xl);
+  text-transform: uppercase;
+  font-family: var(--font-cormorant-garamond);
+  text-align: left;
+}
+.onboarding1 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

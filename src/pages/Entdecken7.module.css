@@ -1,0 +1,135 @@
+.aiIcon,
+.youIcon {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+.aiIcon {
+  top: 60px;
+}
+.du,
+.gerneHierIst,
+.museful,
+.zeigMitEin {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  font-weight: 500;
+}
+.gerneHierIst,
+.museful,
+.zeigMitEin {
+  top: 58px;
+}
+.gerneHierIst,
+.zeigMitEin {
+  top: 20px;
+  left: 42px;
+  font-size: var(--font-size-xl);
+}
+.gerneHierIst {
+  top: 80px;
+  display: inline-block;
+  width: 307px;
+}
+.kiChat {
+  position: absolute;
+  top: 198px;
+  left: 40px;
+  width: 349px;
+  height: 130px;
+}
+.header,
+.pacMan {
+  position: absolute;
+  top: 45px;
+  left: 34px;
+}
+.sendButtonIcon {
+  position: absolute;
+  top: 800px;
+  left: 351px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.header {
+  top: 0;
+  left: -1px;
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 432px;
+  height: 120px;
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-cormorant-garamond);
+}
+.cameraButtonIcon,
+.closeButtonIcon,
+.saveButtonIcon {
+  position: absolute;
+  top: 740px;
+  left: 354px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.cameraButtonIcon,
+.saveButtonIcon {
+  left: 38px;
+}
+
+.frage {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-weight: 500;
+  display: inline-block;
+  width: 60.8px;
+}
+.micFill0Wght400Grad0Opsz24Icon {
+  position: absolute;
+  top: 5px;
+  left: 261px;
+  width: 30.4px;
+  height: 30px;
+  overflow: hidden;
+}
+.chat {
+  position: absolute;
+  top: 800px;
+  left: 40px;
+  border-radius: var(--br-lgi);
+  background-color: var(--color-gray-200);
+  width: 298px;
+  height: 40px;
+  font-size: var(--font-size-lg);
+}
+
+.loginButton {
+  position: absolute;
+  top: 344px;
+  left: 79px;
+  border-radius: var(--br-10xl);
+  background-color: var(--color-gray-200);
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: var(--font-size-5xl);
+}
+.entdecken8 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

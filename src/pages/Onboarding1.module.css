@@ -1,0 +1,216 @@
+.onboarding8Child {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 430px;
+  height: 756px;
+}
+.jetztStarten {
+  position: relative;
+  font-weight: 500;
+}
+.loginButton {
+  position: absolute;
+  top: 690px;
+  left: 121px;
+  border-radius: var(--br-23xl);
+  background-color: var(--color-gray-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  font-size: var(--font-size-5xl);
+}
+.duBist,
+.duBistWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.duBist {
+  line-height: 500%;
+  font-weight: 500;
+  width: 80px
+}
+.duBistWrapper {
+  width: 65px;
+  height: 30px;
+}
+.generationAlpha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 150%;
+}
+.generationAlphaWrapper,
+.groupContainer,
+.groupWrapper {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 168px;
+  height: 30px;
+}
+.groupContainer,
+.groupWrapper {
+  top: 0;
+  height: 65px;
+}
+.groupWrapper {
+  top: 8px;
+  left: 112px;
+}
+.groupChild,
+.groupParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+.groupParent {
+  top: 190px;
+  left: 75px;
+  width: 280px;
+}
+.duSprichst {
+  line-height: 150%;
+  font-weight: 500;
+}
+.deutsch,
+.duSprichst,
+.duSprichstWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.duSprichstWrapper {
+  width: 105px;
+  height: 30px;
+}
+.deutsch {
+  line-height: 150%;
+}
+.deutschWrapper {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 79px;
+  height: 30px;
+}
+.groupFrame,
+.groupParent1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105px;
+  height: 65px;
+}
+.groupFrame {
+  top: 8px;
+  left: 112px;
+}
+.groupDiv,
+.groupItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+.groupDiv {
+  top: 301px;
+  left: 80px;
+  width: 217px;
+}
+.duBist1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 150%;
+  font-weight: 500;
+  width: 80px
+}
+.duBistContainer {
+  top: 0;
+  width: 65px;
+  height: 30px;
+}
+.duBistContainer,
+.muser,
+.muserWrapper {
+  position: absolute;
+  left: 0;
+}
+.muser {
+  top: 0;
+  line-height: 150%;
+}
+.muserWrapper {
+  top: 35px;
+  width: 59px;
+  height: 30px;
+}
+.groupParent3,
+.groupWrapper1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65px;
+  height: 65px;
+}
+.groupWrapper1 {
+  top: 8px;
+  left: 112px;
+}
+.groupInner,
+.groupParent2 {
+  position: absolute;
+  height: 80px;
+}
+.groupInner {
+  top: calc(50% - 40px);
+  left: calc(50% - 88.5px);
+  width: 80px;
+}
+.groupParent2 {
+  top: 412px;
+  left: 83px;
+  width: 177px;
+}
+.soZusammenfassend {
+  position: absolute;
+  top: 84px;
+  left: 45px;
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  width: 350px;
+  height: 46px;
+}
+.eyeTrackingFill0Wght400Gra,
+.language24dpFill0Wght400GrIcon {
+  position: absolute;
+  top: 315px;
+  left: 94px;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+}
+.eyeTrackingFill0Wght400Gra {
+  top: 429px;
+  left: 97px;
+}
+.onboarding8 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}

@@ -1,0 +1,132 @@
+/* Entdecken4.module.css */
+
+.entdecken5 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lgi);
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}
+
+.scrollableContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 700px; /* Adjust height to fit within the container */
+  margin-top: 120px; 
+  margin-left: 20px;/* Optional: Add padding if necessary */
+}
+
+.esErschienenZahlreicheKlone{
+  padding: 20px;
+}
+
+.text,
+.text2 {
+  width: 364px;
+  margin-top: 20px; /* Adjust as necessary */
+  margin-bottom: 20px; /* Adjust as necessary */
+  padding: 10px; /* Optional: Add padding inside the sections */
+}
+
+
+.textChild {
+  /* Removed position: absolute; */
+  border-radius: var(--br-lg);
+  background-color: var(--color-gainsboro-100);
+  width: 100%; /* Adjust width as necessary */
+  height: 100%; /* Adjust height as necessary */
+}
+
+.pacManJapPakkuman {
+  /* Removed position: absolute; */
+  top: 63.1px;
+  left: 28px;
+  line-height: 150%;
+  display: inline-block;
+  width: 100%; /* Adjust width as necessary */
+  height: 100%; /* Adjust height as necessary */
+}
+
+.pacManJapPakkuman1 {
+ padding: 20px;
+}
+
+.entdecken5Child {
+  /* Adjust positioning and styles as necessary */
+  top: 570px;
+  border-radius: var(--br-lg);
+  background-color: var(--color-gainsboro-100);
+  height: 110px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 432px;
+  height: 120px;
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-cormorant-garamond);
+}
+
+.pacMan {
+  /* Adjust positioning and styles as necessary */
+  position: absolute;
+  top: 45px;
+  left: 36px;
+}
+
+.closeButtonIcon,
+.cameraButtonIcon {
+  position: absolute;
+  cursor: pointer;
+}
+
+.closeButtonIcon {
+  top: 860px;
+  left: 350px;
+  width: 40px;
+  height: 40px;
+}
+
+.cameraButtonIcon {
+  top: 858px;
+  left: 38px;
+  width: 40px;
+  height: 40px;
+}
+
+.saveButtonIcon {
+  /* Adjust positioning relative to its container */
+  margin-top: 20px; /* Example: Adjust margin as necessary */
+  margin-left: 320px; /* Example: Adjust margin as necessary */
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.loginButton {
+  position: absolute;
+  top: 860px;
+  left: 93px;
+  border-radius: var(--br-10xl);
+  background-color: var(--color-gray-200);
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-5xl);
+}
+
+.chat {
+  position: relative;
+  font-weight: 500;
+}

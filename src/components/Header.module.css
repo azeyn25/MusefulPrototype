@@ -1,0 +1,14 @@
+.header,
+.headerChild {
+  position: absolute;
+  top: 0;
+  width: 430px;
+  height: 110px;
+}
+.headerChild {
+  left: 0;
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+}
+.header {
+  left: -2px;
+}

@@ -1,0 +1,143 @@
+.onboarding9Child {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 430px;
+  height: 756px;
+  display: none;
+}
+.div,
+.groupChild {
+  position: absolute;
+  top: 0;
+}
+.groupChild {
+  left: 0;
+  border-radius: var(--br-18xl);
+  background-color: var(--dark-ink);
+  width: 275px;
+  height: 262px;
+  opacity: 0.2;
+}
+.div {
+  left: 68px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.groupInner,
+.groupItem {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.groupInner {
+  left: 161px;
+}
+.parent,
+.rectangleParent {
+  position: absolute;
+  top: 78px;
+  left: 37px;
+  width: 201px;
+  height: 105px;
+}
+.rectangleParent {
+  top: 390px;
+  left: 85px;
+  width: 275px;
+  height: 262px;
+  text-align: left;
+}
+.wieAltBist,
+.willkommen {
+  position: absolute;
+  top: 84px;
+  left: 45px;
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  display: inline-block;
+  width: 350px;
+  height: 46px;
+}
+.wieAltBist {
+  top: 150px;
+  left: 55px;
+  font-size: var(--font-size-xl);
+  width: 324px;
+  height: 40px;
+}
+.statusChild,
+.statusInner,
+.statusItem {
+  top: 0;
+  background-color: var(--dark-ink);
+  width: 100px;
+}
+.statusChild {
+  position: absolute;
+  left: 0;
+  height: 8px;
+}
+.statusInner,
+.statusItem {
+  opacity: 0.3;
+}
+.statusItem {
+  position: absolute;
+  left: 110px;
+  height: 8px;
+}
+.statusInner {
+  left: 220px;
+}
+.rectangleDiv,
+.status,
+.statusInner {
+  position: absolute;
+  height: 8px;
+}
+.rectangleDiv {
+  top: 0;
+  left: 330px;
+  background-color: var(--dark-ink);
+  width: 100px;
+  opacity: 0.3;
+}
+.status {
+  top: 50px;
+  left: 0;
+  width: 430px;
+}
+.onboarding9 {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
+  height: 932px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 70px;
+  color: var(--dark-ink);
+  font-family: var(--font-quicksand);
+}
+.loginButton {
+  position: absolute;
+  top: 690px;
+  left: 165px;
+  border-radius: var(--br-23xl);
+  background-color: var(--color-gray-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-3xl);
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.losGehts {
+  position: relative;
+  font-weight: 500;
+}
