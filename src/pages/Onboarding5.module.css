@@ -1,44 +1,71 @@
-.onboarding1Child {
-  position: absolute;
-  top: 190px;
-  left: 0;
-  width: 430px;
-  height: 756px;
-}
-.deinePersonalisierteMuseumse,
-.erlebeUndInteragiere {
-  position: absolute;
-  top: 418px;
-  left: 45px;
-  font-weight: 500;
-  display: inline-block;
-  width: 350px;
-  height: 46px;
-}
-.erlebeUndInteragiere {
-  top: 530px;
-  left: 40px;
-  font-size: var(--font-size-xl);
-  height: 110px;
-}
-.museful {
-  position: absolute;
-  top: 252px;
-  left: 80px;
-  font-size: var(--font-size-45xl);
-  text-transform: uppercase;
-  font-family: var(--font-cormorant-garamond);
-  text-align: left;
-}
 .onboarding1 {
   width: 100%;
-  position: relative;
-  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
-  height: 932px;
+  height: 100vh; /* Use full viewport height */
+  background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
   overflow: hidden;
   cursor: pointer;
-  text-align: center;
-  font-size: var(--font-size-13xl);
+  font-size: 4vw; /* Increased responsive font size */
   color: var(--dark-ink);
   font-family: var(--font-quicksand);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.musefulContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding-bottom: 2rem; /* Adjust padding to move content as needed */
+}
+
+.museful {
+  font-size: 6vw; /* Responsive font size */
+  font-family: var(--font-cormorant-garamond);
+  text-transform: uppercase;
+}
+
+.onboarding1Content {
+  text-align: center; /* Center text alignment */
+  padding: 2rem; /* Add padding for spacing */
+}
+
+.deinePersonalisierteMuseumse,
+.erlebeUndInteragiere {
+  font-weight: 500;
+  font-size: 3vw; /* Increased responsive font size */
+  margin-bottom: 1rem;
+}
+
+.erlebeUndInteragiere {
+  font-size: 2.5vw; /* Slightly smaller but still increased responsive font size */
+}
+
+@media (min-width: 360px) {
+  .museful {
+    font-size: 4rem; /* Adjust font size for larger screens */
+  }
+  .deinePersonalisierteMuseumse,
+  .erlebeUndInteragiere {
+    font-size: 1rem; /* Adjust font size for larger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .museful {
+    font-size: 4rem; /* Adjust font size for larger screens */
+  }
+  .deinePersonalisierteMuseumse,
+  .erlebeUndInteragiere {
+    font-size: 2rem; /* Adjust font size for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .museful {
+    font-size: 5rem; /* Further increased size for very large screens */
+  }
+  .deinePersonalisierteMuseumse,
+  .erlebeUndInteragiere {
+    font-size: 2.5rem; /* Further increased size for very large screens */
+  }
 }

@@ -1,11 +1,14 @@
 import React, { useEffect, useCallback, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import styles from "./Entdecken4.module.css";
+import { useTranslation } from "react-i18next";
 
 const Entdecken4 = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { result } = location.state || {};
+  const { t } = useTranslation();
 
   // Use state to store firstDetectedName
   const [firstDetectedName, setFirstDetectedName] = useState("");
@@ -41,42 +44,46 @@ const Entdecken4 = () => {
   }
 
   return (
-    <div className={styles.entdecken5}>
-      <div className={styles.scrollableContainer}>
-        <div className={styles.text}>
-          <div className={styles.pacManJapPakkuman}>
-            <div className={styles.textChild}>
-              <p className={styles.pacManJapPakkuman1}>
-                Der Stein von Rosette oder Stein von Rosetta, auch kurz Rosetta-Stein (arabisch حجر رشيد, DMG Ḥaǧar Rašīd, französisch pierre de Rosette, englisch Rosetta Stone) ist das Fragment einer Stele aus Memphis (Ägypten) aus Granodiorit und enthält ein mehrsprachiges Synodaldekret von 196 v. Chr. aus der Zeit der altgriechisch-makedonisch-ptolemäischen Dynastie, erstellt im Auftrag des Königs Ptolemaios V. Epiphanes, eines Nachfolgers von Alexander dem Großen. Der Stein von Rosette war entscheidend für die Entschlüsselung der ägyptischen Hieroglyphen.
-              </p>
-            </div>
+    <Container fluid className={styles.entdecken5}>
+      <Row className="h-100">
+        {/* Header */}
+        <Col xs={12}>
+          <div className={styles.header}>
+            <b className={styles.pacMan}>{firstDetectedName}</b>
           </div>
+        </Col>
+        {/* Main Content */}
+        <Card  className={styles.card}>
+          <Col xs={12} md={8} className="d-flex justify-content-center align-items-center">
+          <div className={styles.scrollableContainer}>
+            <div className={styles.text}>
+              <div className={styles.pacManJapPakkuman}>
+                <p className={styles.pacManJapPakkuman1}>
+                {t("steinvonrosette")}
+                </p>
+              </div>
+            </div>
+
+          </div>
+          </Col>
+        </Card>
+        <Card  className={styles.card}>
+        <Col xs={12} md={8} className="d-flex justify-content-center align-items-center">            
+              <img src="/rosettapic.jpg" alt="Rosetta Stone" className={styles.rosettaPic} />
+        </Col>
+        </Card>
+        </Row>
+        <Row className="h-100">
+        <Col className=" p-3">
+        <div className={styles.buttonContainer}>
+            <img src="/camerabutton.svg" alt="Camera" className={styles.cameraButtonIcon} onClick={onCameraButtonIconClick} /> 
+            <Button className={styles.loginButton} onClick={onLoginButtonContainerClick}>Chat</Button>
+            <img src="/closebutton1.svg" alt="Close" className={styles.closeButtonIcon} onClick={onCloseButtonIconClick} />
+            
         </div>
-        <div className={styles.text2}>
-          {/* Replace the text with an image */}
-          <img src="/rosettapic.jpg" alt="Rosetta Stone" className={styles.rosettaPic} />
-        </div>
-      </div>
-      <div className={styles.header}>
-        {/* Display the first detected object's name dynamically */}
-        <b className={styles.pacMan}>{firstDetectedName}</b>
-      </div>
-      <img
-        className={styles.closeButtonIcon}
-        alt=""
-        src="/closebutton1.svg"
-        onClick={onCloseButtonIconClick}
-      />
-      <img
-        className={styles.cameraButtonIcon}
-        alt=""
-        src="/camerabutton.svg"
-        onClick={onCameraButtonIconClick}
-      />
-      <div className={styles.loginButton} onClick={onLoginButtonContainerClick}>
-        <div className={styles.chat}>Chat</div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -1,63 +1,84 @@
-.onboarding2Child {
-  position: absolute;
-  top: 190px;
-  left: 0;
-  width: 430px;
-  height: 756px;
-}
-.bevorEsLosgeht,
-.willkommen {
-  position: absolute;
-  top: 84px;
-  left: 45px;
-  font-weight: 500;
-  display: inline-block;
-  width: 350px;
-  height: 46px;
-}
-.bevorEsLosgeht {
-  top: 150px;
-  left: 55px;
-  font-size: var(--font-size-xl);
-  width: 324px;
-  height: 110px;
-}
-.losGehts {
-  position: relative;
-  font-weight: 500;
-}
-.loginButton {
-  position: absolute;
-  top: 690px;
-  left: 138px;
-  border-radius: var(--br-23xl);
-  background-color: var(--color-gray-200);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-3xl);
-  cursor: pointer;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-}
-.monaLisaSvgrepoCom1Icon {
-  position: absolute;
-  top: 330px;
-  left: 91px;
-  width: 248px;
-  height: 248px;
-  overflow: hidden;
-  opacity: 0.6;
-}
 .onboarding2 {
   width: 100%;
-  position: relative;
-  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
-  height: 932px;
+  height: 100vh; /* Full viewport height */
+  background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
   overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-13xl);
   color: var(--dark-ink);
   font-family: var(--font-quicksand);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.willkommen,
+.bevorEsLosgeht {
+  font-weight: 500;
+  margin-bottom: 1rem; /* Spacing between text elements */
+  color: white; /* Ensure text is white */
+  font-family: var(--font-quicksand);
+}
+
+.willkommen {
+  font-size: 4vw; /* Responsive font size */
+}
+
+.bevorEsLosgeht {
+  font-size: 3vw;
+  margin-left: 20px;
+  margin-right: 20px; /* Responsive font size */
+}
+
+.monaLisaSvgrepoCom1Icon {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.6;
+  margin-bottom: 2rem; /* Spacing below image */
+}
+
+.loginButton {
+  border-radius: var(--br-23xl); /* Custom border radius */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  padding: var(--padding-base) var(--padding-3xl);
+  font-size: 4vw; /* Responsive font size */
+  margin-top: 1rem; /* Spacing above button */
+  text-align: center;
+  font-family: var(--font-quicksand); /* Match font with other text */
+  border: 2px solid white; /* White border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.losGehts {
+  font-weight: 500;
+}
+
+@media (min-width: 360px) {
+  .willkommen {
+    font-size: 2rem;
+  }
+  .bevorEsLosgeht {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .willkommen {
+    font-size: 3rem;
+  }
+  .bevorEsLosgeht {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .willkommen {
+    font-size: 4rem;
+  }
+  .bevorEsLosgeht {
+    font-size: 2.5rem;
+  }
 }

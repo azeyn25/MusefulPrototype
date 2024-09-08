@@ -1,11 +1,14 @@
 import React, { useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Entdecken2.module.css";
 import Webcam from "react-webcam";
+import { useTranslation } from "react-i18next";
 
 const Entdecken2 = () => {
   const navigate = useNavigate();
   const webcamRef = useRef(null);
+  const { t } = useTranslation();
 
   const onEntdecken3ContainerClick = useCallback(() => {
     navigate("/entdecken4");
@@ -17,9 +20,9 @@ const Entdecken2 = () => {
   }, [navigate]);
 
   const videoConstraints = {
-    width: 1280,
-    height: 720,
-    facingMode: "user"
+    width: 720,
+    height: 1280,
+    facingMode: { exact: "environment" },
   };
 
   const capture = useCallback(async () => {
@@ -42,47 +45,52 @@ const Entdecken2 = () => {
         redirect: "follow"
       };
 
-      const apiResponse = await fetch("http://20.79.185.199:9000/api/detect", requestOptions);
+      const apiResponse = await fetch("https://museful.de:9000/api/detect", requestOptions);
       const result = await apiResponse.json();
       console.log("API Result:", result);
 
-      // Pass the result state to Entdecken4
       navigate("/entdecken4", { state: { result } });
     } catch (error) {
       console.error("Error:", error);
-      // You can display an error message to the user here
+      // Handle error state or message here
     }
   }, [webcamRef, navigate]);
 
   return (
-    <div className={styles.entdecken3} onClick={onEntdecken3ContainerClick}>
-      <div className={styles.webcamContainer}>
-        <Webcam
-          className={styles.fullscreenWebcam}
-          audio={false}
-          height={720}
-          ref={webcamRef}
-          screenshotFormat="image/jpeg"
-          width={1280}
-          videoConstraints={videoConstraints}
-        />
-      </div>
-      <div className={styles.header}>
-        <b className={styles.dauerausstellung}>Dauerausstellung</b>
-      </div>
-      <img
-        className={styles.closeButtonIcon}
-        alt=""
-        src="/closebutton.svg"
-        onClick={onCloseButtonIconClick}
-      />
-      <img
-        className={styles.frameButtonIcon}
-        onClick={capture}
-        src="/screenshot.svg"
-        alt=""
-      />
-    </div>
+    <Container fluid className={styles.entdecken2} onClick={onEntdecken3ContainerClick}>
+      <Row noGutters className="h-100">
+        <Col className="p-0 position-relative d-flex justify-content-center align-items-center">
+          <div className={styles.webcamContainer}>
+            <Webcam
+              className={styles.portraitWebcam}
+              audio={false}
+              ref={webcamRef}
+              screenshotFormat="image/jpeg"
+              videoConstraints={videoConstraints}
+            />
+            <div className={styles.buttonContainer1}>
+              <img
+                className={styles.frameButtonIcon}
+                onClick={capture}
+                src="/screenshot.svg"
+                alt="Capture"
+              />
+              </div>
+              <div className={styles.buttonContainer2}>
+              <img
+                className={styles.closeButtonIcon}
+                alt="Close"
+                src="/closebutton.svg"
+                onClick={onCloseButtonIconClick}
+              />
+            </div>
+          </div>
+          <div className={styles.header}>
+            <b className={styles.dauerausstellung}>{t("dauerausstellung")}</b>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

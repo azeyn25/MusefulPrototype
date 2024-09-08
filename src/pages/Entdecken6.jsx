@@ -1,6 +1,7 @@
 import React, { useContext, useCallback, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { InputContext } from "./InputContext";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Entdecken6.module.css";
 
 const Entdecken6 = () => {
@@ -9,7 +10,6 @@ const Entdecken6 = () => {
   const location = useLocation();
   const { detectedName } = location.state || {};
 
-  // Array to hold all questions and responses
   const [conversation, setConversation] = useState([]);
 
   const sendMessage = async () => {
@@ -30,10 +30,9 @@ const Entdecken6 = () => {
     };
 
     try {
-      const response = await fetch("http://20.79.185.199:9001/api/chat", requestOptions);
+      const response = await fetch("https://museful.de:9001/api/chat", requestOptions);
       const result = await response.text();
 
-      // Append the new question and response to the conversation array
       setConversation((prevConversation) => [
         ...prevConversation,
         { question: inputValue, response: result },
@@ -56,7 +55,7 @@ const Entdecken6 = () => {
   }, [navigate]);
 
   const onCameraButtonIconClick = useCallback(() => {
-    navigate("/entdecken3");
+    navigate("/entdecken2");
   }, [navigate]);
 
   const handleInputChange = (event) => {
@@ -64,59 +63,77 @@ const Entdecken6 = () => {
   };
 
   return (
-    <div className={styles.entdecken7}>
-      <img
-        className={styles.sendButtonIcon}
-        alt=""
-        src="/send-button.svg"
-        onClick={onSendButtonIconClick}
-      />
-      <div className={styles.header}>
-        <b className={styles.pacMan}>{detectedName}</b>
-      </div>
-      <img
-        className={styles.closeButtonIcon}
-        alt=""
-        src="/closebutton1.svg"
-        onClick={onCloseButtonIconClick}
-      />
-      <img
-        className={styles.cameraButtonIcon}
-        alt=""
-        src="/camerabutton.svg"
-        onClick={onCameraButtonIconClick}
-      />
-      <div className={styles.chat}>
-        <input
-          className={styles.chatInput}
-          type="text"
-          placeholder="Type your message..."
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div className={styles.conversation}>
-        {conversation.map((entry, index) => (
-          <div key={index}>
-            <div className={styles.chatLineyou}>
-              <div className={styles.itsyou}>
-                <div className={styles.du}>Du</div>
-                <img className={styles.youIcon} alt="" src="/you-icon.svg" />
-              </div>
-              <div className={styles.zeigMir}>{entry.question}</div>
-            </div>
-
-            <div className={styles.chatLinemuseful}>
-              <div className={styles.itsmuseful}>
-                <img className={styles.aiIcon} alt="" src="/ai-icon.svg" />
-                <div className={styles.museful}>Museful</div>
-              </div>
-              <div className={styles.answer}>{entry.response}</div>
-            </div>
+    <Container fluid className={styles.entdecken7}>
+      <Row className="h-100">
+        {/* Header */}
+        <Col xs={12}>
+          <div className={styles.header}>
+            <b className={styles.dauerausstellung}>{detectedName}</b>
           </div>
-        ))}
-      </div>
-    </div>
+        </Col>
+
+        {/* Conversation */}
+        <Col xs={12} className="d-flex flex-column">
+          <div className={styles.conversation}>
+            {conversation.map((entry, index) => (
+              <div key={index}>
+                <div className={styles.chatLineyou}>
+                  <div className={styles.itsyou}>
+                    <div className={styles.du}>Du</div>
+                    <img className={styles.youIcon} alt="" src="/you-icon.svg" />
+                  </div>
+                  <div className={styles.zeigMir}>{entry.question}</div>
+                </div>
+
+                <div className={styles.chatLinemuseful}>
+                  <div className={styles.itsmuseful}>
+                    <img className={styles.aiIcon} alt="" src="/ai-icon.svg" />
+                    <div className={styles.museful}>Museful</div>
+                  </div>
+                  <div className={styles.answer}>{entry.response}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Col>
+      </Row>
+      <Row className="h-100">
+        <Col xs={12} className="d-flex flex-column p-3">
+
+          <div className={styles.chat}>            
+            <div className={styles.buttons}>
+              <img
+                className={styles.closeButtonIcon}
+                alt=""
+                src="/closebutton1.svg"
+                onClick={onCloseButtonIconClick}
+              />
+              </div>
+              <div className={styles.buttons2}>
+              <img
+                className={styles.cameraButtonIcon}
+                alt=""
+                src="/camerabutton.svg"
+                onClick={onCameraButtonIconClick}
+              />
+              </div>
+            <input
+              className={styles.chatInput}
+              type="text"
+              placeholder="Type your message..."
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+            <img
+              className={styles.sendButtonIcon}
+              alt=""
+              src="/send-button.svg"
+              onClick={onSendButtonIconClick}
+            />
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -1,148 +1,80 @@
 .entdecken7 {
   width: 100%;
+  height: 100vh; /* Full viewport height */
   position: relative;
   background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
-  height: 932px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-29xl);
   color: var(--dark-ink);
-  font-family: var(--font-cormorant-garamond);
-}
-
-.sendButtonIcon {
-  position: absolute;
-  top: 800px;
-  left: 351px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.header,
-.pacMan {
-  position: absolute;
-  top: 45px;
-  left: 37px;
-}
-
-.header {
-  top: 0;
-  left: 0;
-  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
-  width: 432px;
-  height: 120px;
-}
-
-.cameraButtonIcon,
-.closeButtonIcon {
-  position: absolute;
-  top: 740px;
-  left: 351px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.cameraButtonIcon {
-  top: 740px;
-  left: 48px;
-}
-
-.answer {
-  font-weight: 600;
-  max-width: 100%;
-  border-radius: var(--br-lgi);
-  background-color: var(--color-gray-200);
-  padding: 10px;
-  word-wrap: break-word;
-  display: flex;
-  flex-direction: column; /* Ensure content stacks vertically */
-  align-self: flex-start; /* Align the text to the left side */
-}
-
-.zeigMir {
-  font-weight: 600;
-  max-width: 100%;
-  border-radius: var(--br-lgi);
-  background-color: var(--color-gray-200);
-  padding: 10px;
-  word-wrap: break-word;
-  display: flex;
-  flex-direction: column; /* Ensure content stacks vertically */
-  align-self: flex-end; /* Align the text to the right side */
-}
-
-.conversation {
-  position: absolute;
-  top: 150px;
-  left: 42px;
-  right: 42px;
-  bottom: 150px;
-  overflow-y: auto;
+  font-family: var(--font-quicksand);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: var(--font-size-lg);
-  font-family: var(--font-quicksand);
-  height: 560px;
+  justify-content: center; /* Center content vertically */
 }
 
-.chatLineyou {
+/* Header styling */
+.header {
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 100%;
+  height: 120px;
+  font-family: var(--font-cormorant-garamond);
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: flex-end; /* Align items to the right side */
-  margin-bottom: 10px;
-  text-align: right; /* Align text to the right */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure it’s on top of other content */
+}
+
+.dauerausstellung {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 
-.chatLinemuseful {
+.buttons {
+  position: absolute; /* Absolute positioning within the container */
+  bottom: 60px; /* Adjust vertical positioning as needed */
+  right: 5px; /* Align buttons to the right side of the container */
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: flex-start; /* Align items to the left side */
-  margin-bottom: 10px;
-  text-align: left; /* Align text to the left */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
 }
 
-.itsyou{
+.buttons2 {
+  position: absolute; /* Absolute positioning within the container */
+  bottom: 60px; /* Adjust vertical positioning as needed */
+  left: 5px; /* Align buttons to the right side of the container */
   display: flex;
-  align-items: center; 
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
 }
 
-.itsmuseful{
-  display: flex;
-  align-items: center; 
-}
-.youIcon {
- /* Space between the icon and the text */
-  margin-left: 10px; /* Push the icon to the right */
+
+
+.closeButtonIcon, .cameraButtonIcon {
+  width: 40px;
+  height: 40px;
 }
 
-.aiIcon {
-/* Space between the icon and the text */
-  margin-right: 10px; /* Space between the icon and the text */
-}
 
-.du {
-  font-weight: 500;
-}
 
-.museful {
-  font-weight: 500;
-}
 
+/* Chat container styling */
 .chat {
   position: absolute;
-  top: 800px;
-  left: 42px;
-  border-radius: var(--br-lgi);
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Align to the left */
   background-color: var(--color-gray-200);
-  width: 260px;
+  border-radius: var(--br-lgi);
+  width: 90%;
   height: 40px;
   display: flex;
   align-items: center;
-  padding-right: 40px;
+  margin-left: 10px;
   font-size: var(--font-size-lg);
   font-family: var(--font-quicksand);
 }
@@ -156,8 +88,54 @@
   font-size: var(--font-size-lg);
   font-family: var(--font-quicksand);
   background-color: transparent;
+  color: black;
+  ;
 }
 
-.chatInput:focus {
-  outline: none;
+.conversation {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  right: 20px;
+  bottom: 120px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-quicksand);
+}
+
+.chatLineyou, .chatLinemuseful {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.chatLineyou {
+  align-items: flex-end;
+}
+
+.chatLinemuseful {
+  align-items: flex-start;
+}
+
+.itsyou, .itsmuseful {
+  display: flex;
+  align-items: center;
+}
+
+.youIcon, .aiIcon {
+  margin: 0 10px;
+}
+
+.du, .museful {
+  font-weight: 500;
+}
+
+.answer, .zeigMir {
+  border-radius: var(--br-lgi);
+  background-color: var(--color-gray-200);
+  padding: 10px;
+  word-wrap: break-word;
 }

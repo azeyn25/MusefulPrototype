@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { useNavigate } from "react-router-dom";
+import { Container, Row, Col, Button } from "react-bootstrap"; // Import Bootstrap components
 import styles from "./Onboarding51.module.css";
 import AppContext from './AppContext';
 import { useTranslation } from "react-i18next";
@@ -7,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Onboarding51 = () => {
   const { age, setAge } = useContext(AppContext);
   const navigate = useNavigate();
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const handleIncreaseAge = () => {
     setAge((prevAge) => (prevAge < 99 ? prevAge + 1 : prevAge));
@@ -22,38 +23,39 @@ const Onboarding51 = () => {
   };
 
   return (
-    <div className={styles.onboarding9}>
-      <img className={styles.onboarding9Child} alt="" src="/vector-1.svg" />
-      <div className={styles.rectangleParent}>
-        <div className={styles.groupChild} />
-        <div className={styles.parent}>
-          <div className={styles.div}>{age}</div>
-          <img
-            className={styles.groupItem}
-            alt=""
-            src="/polygon-2.svg"
-            onClick={handleDecreaseAge}
-          />
-          <img
-            className={styles.groupInner}
-            alt=""
-            src="/polygon-1.svg"
-            onClick={handleIncreaseAge}
-          />
-        </div>
-      </div>
-      <div className={styles.willkommen}>{t("welcome")}</div>
-      <div className={styles.wieAltBist}>{t("howold")}</div>
-      <div className={styles.loginButton}>
-        <div className={styles.losGehts} onClick={weitergehts}>{t("buttonweiter")}</div>
-      </div>
-      <div className={styles.status}>
-        <div className={styles.statusChild} />
-        <div className={styles.statusItem} />
-        <div className={styles.statusInner} />
-        <div className={styles.rectangleDiv} />
-      </div>
-    </div>
+    <Container fluid className={`${styles.onboarding9} d-flex flex-column justify-content-center align-items-center`}>
+      <Row className="justify-content-center text-center mb-4">
+        <Col xs={12} md={8} lg={6}>
+          <div className={styles.willkommen}>{t("welcome")}</div>
+          <div className={styles.wieAltBist}>{t("howold")}</div>
+        </Col>
+      </Row>
+      <Row className="justify-content-center mb-4">
+        <Col xs={12} md={8} lg={6} className="d-flex flex-column align-items-center">
+          <div className={`${styles.rectangleParent} `}>
+            <div className={styles.ageWrapper}>
+              <Button className={`${styles.controlButton} ${styles.decreaseButton}`} onClick={handleDecreaseAge}>
+                <img src="/polygon-2.svg" alt="Decrease" />
+              </Button>
+              <div className={styles.div}>{age}</div>
+              <Button className={`${styles.controlButton} ${styles.increaseButton}`} onClick={handleIncreaseAge}>
+                <img src="/polygon-1.svg" alt="Increase" />
+              </Button>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col xs={12} md={8} lg={6} className="d-flex justify-content-center">
+          <Button
+            className={`${styles.loginButton} d-flex justify-content-center align-items-center`}
+            onClick={weitergehts}
+          >
+            {t("buttonweiter")}
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

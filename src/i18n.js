@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next'
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug:true,
-    lng:"de",
+    lng:"en",
     resources: {
         de:{
             translation: {
@@ -28,9 +28,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 dusprichst: "Du sprichst",
                 jetztstarten: "Jetzt starten",
                 dauerausstellung: "Dauerausstellung",
-                dauerausstellung1: "Mit 2.000 Objekten aus unserer Sammlung erzählen wir auf 3.000 Quadratmetern über 40.000 Jahre Kommunikationsgeschichte – vom Faustkeil bis zum Smartphone."
-
-            
+                dauerausstellung1: "Mit 2.000 Objekten aus unserer Sammlung erzählen wir auf 3.000 Quadratmetern über 40.000 Jahre Kommunikationsgeschichte – vom Faustkeil bis zum Smartphone.",
+                dauerausstellung2: "Entdecken Sie einzigartige Objekte wie die sagenumwobene Blaue Mauritius, das erste Telefon von Philipp Reis oder die legendäre Chiffriermaschine Enigma.",
+                dauerausstellung3: "Verschicken Sie einen Brief mit der Rohrpost, morsen Sie ein Telegramm nach Hamburg oder präsentieren Sie die Nachrichten in userem Fernsehstudio. Vom Rauchzeichen über die Rohrpost bis zur virtuellen Botschaft: Das Museum für Kommunikation Berlin lässt das Thema Kommunikation vielfältig und interaktiv lebendig werden.",
+                steinvonrosette: "Der Stein von Rosette oder Stein von Rosetta, auch kurz Rosetta-Stein (arabisch حجر رشيد, DMG Ḥaǧar Rašīd, französisch pierre de Rosette, englisch Rosetta Stone) ist das Fragment einer Stele aus Memphis (Ägypten) aus Granodiorit und enthält ein mehrsprachiges Synodaldekret von 196 v. Chr. aus der Zeit der altgriechisch-makedonisch-ptolemäischen Dynastie, erstellt im Auftrag des Königs Ptolemaios V. Epiphanes, eines Nachfolgers von Alexander dem Großen. Der Stein von Rosette war entscheidend für die Entschlüsselung der ägyptischen Hieroglyphen.",
             }
         },
         en:{
@@ -55,9 +56,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 dusprichst: "You talk",
                 jetztstarten: "Start now",
                 dauerausstellung: "Permanent exhibition",
-                dauerausstellung1:"With 2,000 objects from our collection, we tell the story in 3,000 square meters over 40,000 years of communication history - from Hand ax to smartphone."
-
-                
+                dauerausstellung1:"With 2,000 objects from our collection, we tell the story in 3,000 square meters over 40,000 years of communication history - from Hand ax to smartphone.",
+                dauerausstellung2: "Discover unique objects like the legendary Blue One Mauritius, the first telephone by Philipp Reis or the legendary Enigma cipher machine.",
+                dauerausstellung3: "Send a letter by pneumatic post, send a telegram to Hamburg or present the news in our television studio. From smoke signals to pneumatic tubes to virtual messages: the Museum for Communication Berlin brings the topic of communication to life in a diverse and interactive way.",
+                steinvonrosette: "The Rosetta Stone or Rosetta Stone, also known as the Rosetta Stone for short (Arabic حجر رشيد, DMG Ḥaǧar Rašīd, French pierre de Rosette, English Rosetta Stone) is the fragment of a stele from Memphis (Egypt) made of granodiorite and contains a multilingual synodal decree 196 B.C. BC from the time of the ancient Greek-Macedonian-Ptolemaic dynasty, created on behalf of King Ptolemy V Epiphanes, a successor of Alexander the Great. The Rosetta Stone was crucial in deciphering Egyptian hieroglyphs.",
             }
         },
         ch:{

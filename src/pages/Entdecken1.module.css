@@ -1,77 +1,109 @@
-.dauerausstellung,
-.header {
-  position: absolute;
-  top: 48px;
-  left: 41px;
-}
-.scrollableContainer {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  height: 690px; /* Adjust height to fit within the container */
-  margin-top: 20px; /* Optional: Add padding if necessary */
-}
-.header {
-  top: 0;
-  left: -2px;
-  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
-  width: 432px;
-  height: 120px;
-  font-family: var(--font-cormorant-garamond);
-}
-.entdeckenSieEinzigartige,
-.mit2000Objekten,
-.verschickenSieEinen {
-  margin: 0;
-}
-.mit2000ObjektenContainer {
-  position: absolute;
-  top: 127px;
-  left: 49px;
-  font-size: var(--font-size-xl);
-  line-height: 150%;
-  font-weight: 500;
-  display: inline-block;
-  width: 325px;
-  height: 646px;
-}
-.arrowBackFill0Wght400Grad0Icon {
-  position: absolute;
-  top: 852px;
-  left: 21px;
-  width: 55px;
-  height: 55px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.start {
-  position: relative;
-  font-weight: 500;
-}
-.loginButton {
-  position: absolute;
-  top: 860px;
-  left: 292px;
-  border-radius: 25px;
-  background: linear-gradient(2.35deg, #4c4ad0, #7a3ac7 50.61%, #a62bbe);
-  height: 38px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-3xl);
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: var(--font-size-5xl);
-}
 .entdecken2 {
   width: 100%;
   position: relative;
-  background: radial-gradient(50% 50%at 50% 50%, #4252dd, #6834aa);
-  height: 932px;
+  background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
+  height: 100vh;
   overflow: hidden;
-  text-align: left;
   font-size: var(--font-size-29xl);
   color: var(--dark-ink);
   font-family: var(--font-quicksand);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/* Header styling */
+.header {
+  background: linear-gradient(172.25deg, #fd1eda, #6834aa);
+  width: 100%;
+  height: 120px;
+  font-family: var(--font-cormorant-garamond);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure it’s on top of other content */
+}
+
+.dauerausstellung {
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+.mit2000Objekten{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.entdeckenSieEinzigartige{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.verschickenSieEinen{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Button styling */
+.loginButton {
+  border-radius: var(--br-23xl);
+  background-color: transparent;
+  color: white;
+  padding: var(--padding-base) var(--padding-3xl);
+  font-size: 4vw;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: var(--font-quicksand);
+  border: 2px solid white;
+  /* Optional additional centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+/* Responsive styling */
+@media (min-width: 360px) {
+  .dauerausstellung {
+    font-size: 2rem;
+  }
+  .mit2000Objekten {
+    font-size: 0.9rem;
+  }
+  .entdeckenSieEinzigartige,
+  .verschickenSieEinen {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dauerausstellung {
+    font-size: 2rem;
+  }
+  .mit2000Objekten {
+    font-size: 1rem;
+  }
+  .entdeckenSieEinzigartige,
+  .verschickenSieEinen {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dauerausstellung {
+    font-size: 2.5rem;
+  }
+  .mit2000Objekten {
+    font-size: 1.1rem;
+  }
+  .entdeckenSieEinzigartige,
+  .verschickenSieEinen {
+    font-size: 1.1rem;
+  }
 }

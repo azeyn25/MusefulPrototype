@@ -1,258 +1,65 @@
-.onboarding6Child {
-  position: relative;
-  top: 190px;
-  width: 430px;
-  height: 756px;
-}
-
-
-
-.slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  height: 800px;
-  transform: translate3d(-360px, 0px, 0px);
-}
-
-.groupChild {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: var(--br-18xl);
-  background-color: var(--dark-ink);
-  width: 310px;
-  height: 460px;
-  opacity: 0.2;
-}
-
-.duBistAngetrieben,
-.muser {
-  position: absolute;
-  display: inline-block;
-}
-
-.muser {
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 150%;
-  font-weight: 500;
-  width: 172px;
-  height: 35.4px;
-}
-
-.duBistAngetrieben {
-  top: 250px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: var(--font-size-xl);
-  width: 250px;
-  height: 95px;
-}
-
-.rectangleParent {
-  position: relative;
-  top: 280px;
-  width: 310px;
-  height: 460px;
-  cursor: pointer;
-}
-
-.wieVielInteresse,
-.willkommen {
-  position: relative;
-  top: 120px;
-  font-weight: 500;
-  display: inline-block;
-  width: 350px;
-  height: 46px;
-}
-
-.wieVielInteresse {
-  top: 120px;
-  font-size: var(--font-size-xl);
-  width: 324px;
-  height: 40px;
-}
-
-/* .eyeTrackingFill0Wght400GraIcon {
-  position: relative;
-  top: 400px;
-  width: 91px;
-  height: 91px;
-  overflow: hidden;
-} */
-
-.footprintFill0Wght400Grad0Icon {
-  position: relative;
-  top: 121px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 99px;
-  height: 99px;
-  overflow: hidden;
-  display: block;
-}
-
-.psychologyFill0Wght400Grad0Icon {
-  position: relative;
-  top: -350px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 99px;
-  height: 99px;
-  overflow: hidden;
-  display: block;
-}
-
-.groupItem {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: var(--br-18xl);
-  background-color: var(--dark-ink);
-  width: 310px;
-  height: 460px;
-  opacity: 0.2;
-}
-
-.duBistSchnell,
-.wanderer {
-  position: absolute;
-  display: block;
-}
-
-.wanderer {
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 150%;
-  font-weight: 500;
-  width: 172px;
-  height: 35.4px;
-}
-
-.duBistSchnell {
-  top: 250px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: var(--font-size-xl);
-  white-space: pre-wrap;
-  width: 250px;
-  height: 95px;
-}
-
-
-
-.groupInner,
-.rectangleGroup {
-  position: relative;
-  top: 280px;
-  width: 310px;
-  height: 460px;
-}
-
-.groupInner {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: var(--br-18xl);
-  background-color: var(--dark-ink);
-  opacity: 0.2;
-}
-
-.scholar,
-.wissenIstDer {
-  position: absolute;
-  display: block;
-}
-
-.scholar {
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 150%;
-  font-weight: 500;
-  width: 172px;
-  height: 35.4px;
-}
-
-.wissenIstDer {
-  top: 250px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: var(--font-size-xl);
-  width: 250px;
-  height: 95px;
-}
-
-.rectangleContainer {
-  position: relative;
-  top: 280px;
-  width: 310px;
-  height: 460px;
-}
-
-.statusChild {
-  position: absolute;
-  left: 0;
-  height: 8px;
-}
-
-.statusChild,
-.statusInner,
-.statusItem {
-  top: 0;
-  background-color: var(--dark-ink);
-  width: 100px;
-}
-
-.statusItem {
-  position: absolute;
-  left: 110px;
-  height: 8px;
-}
-
-.statusInner {
-  left: 220px;
-}
-
-.rectangleDiv,
-.status,
-.statusInner {
-  position: absolute;
-  height: 8px;
-}
-
-.rectangleDiv {
-  top: 0;
-  left: 330px;
-  background-color: var(--dark-ink);
-  width: 100px;
-  opacity: 0.3;
-}
-
-.status {
-  top: 50px;
-  left: 0;
-  width: 430px;
-}
-
 .onboarding6 {
   width: 100%;
   position: relative;
   background: radial-gradient(50% 50% at 50% 50%, #4252dd, #6834aa);
-  height: 932px;
+  height: 100vh;
   overflow: hidden;
   text-align: center;
-  font-size: var(--font-size-13xl);
   color: var(--dark-ink);
   font-family: var(--font-quicksand);
+  padding-top: 100px;
+}
+
+.willkommen {
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.wieVielInteresse {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.card {
+  border-radius: var(--br-18xl);
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+.cardImage {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.card-body {
+  padding: 30px 20px; /* Add more padding inside the card */
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-bottom: 15px; /* Add padding below the title */
+}
+
+.card-text {
+  font-size: 1.2rem;
+  padding-bottom: 30px;;
+
+}
+.scrollableContainer {
+  max-height: 500px; /* Set the height of the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 0 15px; /* Optional: Adjust padding */
+  margin-top: 20px; /* Optional: Space from top elements */
 }

@@ -1,46 +1,58 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import AppContext from './AppContext';
-import styles from "./Onboarding.module.css";
-import i18n from "i18next";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import styles from "./Onboarding.module.css";
 
 const Onboarding = () => {
   const { setLanguage } = useContext(AppContext);
   const navigate = useNavigate();
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const handleLanguageClick = (language) => {
     setLanguage(language);
-    i18n.changeLanguage(language);
     navigate("/onboarding51");
   };
 
   return (
-    <div className={styles.onboarding4}>
-      <div className={styles.rectangleParent} onClick={() => handleLanguageClick("de")}>
-        <div className={styles.groupChild} />
-        <div className={styles.deutsch}>Deutsch</div>
-      </div>
-      <div className={styles.rectangleGroup} onClick={() => handleLanguageClick("en")}>
-        <div className={styles.groupItem} />
-        <div className={styles.englisch}>English</div>
-      </div>
-      <div className={styles.rectangleContainer} onClick={() => handleLanguageClick("ch")}>
-        <div className={styles.groupInner} />
-        <div className={styles.spanisch}>中國人</div>
-      </div>
-      <div className={styles.willkommen}>{t("welcome")}</div>
-      <div className={styles.welcheSpracheSprichst}>
-      {t("whatlanguage")}
-      </div>
-      <div className={styles.status}>
-        <div className={styles.statusChild} />
-        <div className={styles.statusItem} />
-        <div className={styles.statusInner} />
-        <div className={styles.statusChild1} />
-      </div>
-    </div>
+    <Container fluid className={`${styles.onboarding4} d-flex flex-column justify-content-center align-items-center`}>
+      <Row className="justify-content-center text-center mb-4">
+        <Col xs={12} md={8} lg={6}>
+          <div className={styles.willkommen}>{t("welcome")}</div>
+          <div className={styles.welcheSpracheSprichst}>
+            {t("whatlanguage")}
+          </div>
+        </Col>
+      </Row>
+      <Row className="justify-content-center align-items-center h-100">
+        <Col xs={12} md={8} lg={6} className="d-flex flex-column align-items-center">
+          <Button
+            className={`${styles.languageButton}`}
+            onClick={() => handleLanguageClick("de")}
+          >
+            
+            Deutsch
+          </Button>
+        </Col>
+        <Col xs={12} md={8} lg={6} className="d-flex flex-column align-items-center">
+          <Button
+            className={`${styles.languageButton}`}
+            onClick={() => handleLanguageClick("en")}
+          >
+            English
+          </Button>
+        </Col>
+        <Col xs={12} md={8} lg={6} className="d-flex flex-column align-items-center">
+          <Button
+            className={`${styles.languageButton}`}
+            onClick={() => handleLanguageClick("ch")}
+          >
+            中國人
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
