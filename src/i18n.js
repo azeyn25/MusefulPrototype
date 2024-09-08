@@ -3,10 +3,10 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
-    debug:true,
-    lng:"en",
+    debug: true,
+    lng: "en",
     resources: {
-        de:{
+        de: {
             translation: {
                 greeting: "Deine personalisierte Museumserfahrung",
                 explanation: "Erlebe und Interagiere mit Ausstellungsobjekten wie nie zuvor mit HIlfe von Künstlicher Intelligenz und Augmented Reality",
@@ -34,7 +34,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 steinvonrosette: "Der Stein von Rosette oder Stein von Rosetta, auch kurz Rosetta-Stein (arabisch حجر رشيد, DMG Ḥaǧar Rašīd, französisch pierre de Rosette, englisch Rosetta Stone) ist das Fragment einer Stele aus Memphis (Ägypten) aus Granodiorit und enthält ein mehrsprachiges Synodaldekret von 196 v. Chr. aus der Zeit der altgriechisch-makedonisch-ptolemäischen Dynastie, erstellt im Auftrag des Königs Ptolemaios V. Epiphanes, eines Nachfolgers von Alexander dem Großen. Der Stein von Rosette war entscheidend für die Entschlüsselung der ägyptischen Hieroglyphen.",
             }
         },
-        en:{
+        en: {
             translation: {
                 greeting: "Your personalized museum experience",
                 explanation: "Experience and interact with exhibits like never before with the help of artificial intelligence and augmented reality",
@@ -56,13 +56,13 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 dusprichst: "You talk",
                 jetztstarten: "Start now",
                 dauerausstellung: "Permanent exhibition",
-                dauerausstellung1:"With 2,000 objects from our collection, we tell the story in 3,000 square meters over 40,000 years of communication history - from Hand ax to smartphone.",
+                dauerausstellung1: "With 2,000 objects from our collection, we tell the story in 3,000 square meters over 40,000 years of communication history - from Hand ax to smartphone.",
                 dauerausstellung2: "Discover unique objects like the legendary Blue One Mauritius, the first telephone by Philipp Reis or the legendary Enigma cipher machine.",
                 dauerausstellung3: "Send a letter by pneumatic post, send a telegram to Hamburg or present the news in our television studio. From smoke signals to pneumatic tubes to virtual messages: the Museum for Communication Berlin brings the topic of communication to life in a diverse and interactive way.",
                 steinvonrosette: "The Rosetta Stone or Rosetta Stone, also known as the Rosetta Stone for short (Arabic حجر رشيد, DMG Ḥaǧar Rašīd, French pierre de Rosette, English Rosetta Stone) is the fragment of a stele from Memphis (Egypt) made of granodiorite and contains a multilingual synodal decree 196 B.C. BC from the time of the ancient Greek-Macedonian-Ptolemaic dynasty, created on behalf of King Ptolemy V Epiphanes, a successor of Alexander the Great. The Rosetta Stone was crucial in deciphering Egyptian hieroglyphs.",
             }
         },
-        ch:{
+        ch: {
             translation: {
                 greeting: "你的个性化博物馆体验",
                 explanation: "借助人工智能和增强现实，体验并与展品互动，如此前从未有过的方式",
@@ -84,9 +84,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 dusprichst: "你說話",
                 jetztstarten: "現在開始",
                 dauerausstellung: "常設展",
-                dauerausstellung1:"我們用 3,000 字講述了我們收藏中的 2,000 件物品的故事 平方米 超過 40,000 年的通訊歷史 - 從 手斧到智慧型手機。",
+                dauerausstellung1: "我們用 3,000 字講述了我們收藏中的 2,000 件物品的故事 平方米 超過 40,000 年的通訊歷史 - 從 手斧到智慧型手機。",
             }
 
         }
     }
-    });
+});
