@@ -7,7 +7,7 @@ import Entdecken6 from "./pages/Entdecken6";
 import Onboarding1 from "./pages/Onboarding1";
 import Onboarding3 from "./pages/Onboarding3";
 import Onboarding11 from "./pages/Onboarding11";
-import Onboarding5 from "./pages/Onboarding5"; 
+import Onboarding5 from "./pages/Onboarding5";
 import Onboarding from "./pages/Onboarding";
 import Onboarding51 from "./pages/Onboarding51";
 import { AppProvider } from "./pages/AppContext";
@@ -93,21 +93,21 @@ function App() {
 
   return (
     <AppProvider>
-    <InputProvider>
-    <Routes>
-      <Route path="/" element={<Onboarding5 />} /> {/* Set Onboarding5 as the initial route */}
-      <Route path="/entdecken1" element={<Entdecken1 />} />   
-      <Route path="/entdecken2" element={<Entdecken2 />} />
-      <Route path="/entdecken4" element={<Entdecken4 />} />
-      <Route path="/entdecken6" element={<Entdecken6 />} />
-      <Route path="/onboarding" element={<Onboarding />} />
-      <Route path="/onboarding3" element={<Onboarding3 />} />
-      <Route path="/onboarding5" element={<Onboarding5 />} />
-      <Route path="/onboarding51" element={<Onboarding51/>}/>
-      <Route path="/onboarding1" element={<Onboarding1/>}/>
-      <Route path="/onboarding11" element={<Onboarding11/>}/>  
-    </Routes>
-   </InputProvider>
+      <InputProvider>
+         <Routes>
+            <Route path="/" element={<Onboarding5 />} /> {/* Set Onboarding5 as the initial route */}
+            <Route path="/entdecken1" element={<Entdecken1 />} />
+            <Route path="/entdecken2" element={<Entdecken2 />} />
+            <Route path="/entdecken4" element={<Entdecken4 />} />
+            <Route path="/entdecken6" element={<Entdecken6 />} />
+            <Route path="/onboarding" element={<Onboarding />} />
+            <Route path="/onboarding3" element={<Onboarding3 />} />
+            <Route path="/onboarding5" element={<Onboarding5 />} />
+            <Route path="/onboarding51" element={<Onboarding51/>}/>
+            <Route path="/onboarding1" element={<Onboarding1/>}/>
+            <Route path="/onboarding11" element={<Onboarding11/>}/>
+        </Routes>
+      </InputProvider>
    </AppProvider>
   );
 }
